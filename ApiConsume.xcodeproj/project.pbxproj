@@ -14,6 +14,9 @@
 		8D7F36B728B4A744008A8DB1 /* ApiConsumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F36B628B4A744008A8DB1 /* ApiConsumeTests.swift */; };
 		8D7F36C128B4A744008A8DB1 /* ApiConsumeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F36C028B4A744008A8DB1 /* ApiConsumeUITests.swift */; };
 		8D7F36C328B4A744008A8DB1 /* ApiConsumeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F36C228B4A744008A8DB1 /* ApiConsumeUITestsLaunchTests.swift */; };
+		8D7F36D328B4A7DF008A8DB1 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F36D228B4A7DF008A8DB1 /* Comments.swift */; };
+		8D7F36D628B4A893008A8DB1 /* CommentsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F36D528B4A893008A8DB1 /* CommentsDataSource.swift */; };
+		8D7F36D928B4ACA7008A8DB1 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F36D828B4ACA7008A8DB1 /* Observer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		8D7F36BC28B4A744008A8DB1 /* ApiConsumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiConsumeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7F36C028B4A744008A8DB1 /* ApiConsumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConsumeUITests.swift; sourceTree = "<group>"; };
 		8D7F36C228B4A744008A8DB1 /* ApiConsumeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConsumeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8D7F36D228B4A7DF008A8DB1 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		8D7F36D528B4A893008A8DB1 /* CommentsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsDataSource.swift; sourceTree = "<group>"; };
+		8D7F36D828B4ACA7008A8DB1 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				8D7F36A528B4A742008A8DB1 /* ApiConsumeApp.swift */,
-				8D7F36A728B4A742008A8DB1 /* ContentView.swift */,
+				8D7F36D728B4AC94008A8DB1 /* Observer */,
+				8D7F36D128B4A783008A8DB1 /* DataSource */,
+				8D7F36D028B4A77A008A8DB1 /* View */,
+				8D7F36CF28B4A762008A8DB1 /* Model */,
 				8D7F36A928B4A743008A8DB1 /* Assets.xcassets */,
 				8D7F36AB28B4A743008A8DB1 /* Preview Content */,
 			);
@@ -125,6 +134,38 @@
 				8D7F36C228B4A744008A8DB1 /* ApiConsumeUITestsLaunchTests.swift */,
 			);
 			path = ApiConsumeUITests;
+			sourceTree = "<group>";
+		};
+		8D7F36CF28B4A762008A8DB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D7F36D228B4A7DF008A8DB1 /* Comments.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D7F36D028B4A77A008A8DB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D7F36A728B4A742008A8DB1 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D7F36D128B4A783008A8DB1 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8D7F36D528B4A893008A8DB1 /* CommentsDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		8D7F36D728B4AC94008A8DB1 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				8D7F36D828B4ACA7008A8DB1 /* Observer.swift */,
+			);
+			path = Observer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D7F36D628B4A893008A8DB1 /* CommentsDataSource.swift in Sources */,
+				8D7F36D928B4ACA7008A8DB1 /* Observer.swift in Sources */,
 				8D7F36A828B4A742008A8DB1 /* ContentView.swift in Sources */,
+				8D7F36D328B4A7DF008A8DB1 /* Comments.swift in Sources */,
 				8D7F36A628B4A742008A8DB1 /* ApiConsumeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
